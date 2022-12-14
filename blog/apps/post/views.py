@@ -4,6 +4,7 @@ from .models import *
 from .forms import PostForm
 # Create your views here.
 
+#Vista para crear un posteo
 def crearPost(request):
     if request.method == 'POST':
         post_form = PostForm(request.POST or None, request.FILES or None)
